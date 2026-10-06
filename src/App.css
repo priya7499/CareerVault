@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+}
+
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.left-section {
+  width: 52%;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #1677ed, #0756c9);
+  color: white;
+  padding: 45px 65px;
+  position: relative;
+  overflow: hidden;
+}
+
+.left-section::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 250px;
+  bottom: -130px;
+  left: -100px;
+  background: rgba(255, 255, 255, 0.06);
+  transform: rotate(25deg);
+  border-radius: 50%;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-box {
+  width: 55px;
+  height: 55px;
+  border: 3px solid white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.logo p {
+  margin: 3px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Illustration */
+
+.illustration {
+  height: 350px;
+  max-width: 650px;
+  margin: 35px auto 0;
+  position: relative;
+}
+
+.person {
+  position: absolute;
+  left: 36%;
+  bottom: 20px;
+  font-size: 180px;
+  z-index: 2;
+}
+
+.job-card,
+.profile-card,
+.check-card {
+  background: white;
+  color: #2464bd;
+  position: absolute;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.job-card {
+  width: 145px;
+  height: 190px;
+  left: 4%;
+  top: 65px;
+  padding: 18px;
+}
+
+.job-card strong {
+  font-size: 20px;
+}
+
+.profile-card {
+  width: 150px;
+  height: 180px;
+  right: 5%;
+  top: 45px;
+  padding: 18px;
+}
+
+.avatar {
+  font-size: 45px;
+}
+
+.mini-icon {
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.line {
+  width: 70%;
+  height: 7px;
+  background: #d8e7fa;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.line.long {
+  width: 90%;
+}
+
+.small-button {
+  width: 45px;
+  height: 10px;
+  background: #1677ed;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.stars {
+  color: #1677ed;
+  margin-top: 10px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 21%;
+  bottom: 70px;
+  font-size: 55px;
+  z-index: 3;
+}
+
+.check-card {
+  width: 90px;
+  height: 110px;
+  right: 13%;
+  bottom: 15px;
+  padding: 12px;
+  font-size: 20px;
+}
+
+.check-card .line {
+  display: inline-block;
+  margin: 0 0 5px 5px;
+  width: 45px;
+}
+
+.plant {
+  position: absolute;
+  left: 12%;
+  bottom: 0;
+  font-size: 55px;
+}
+
+/* Welcome text */
+
+.welcome-text {
+  text-align: center;
+  max-width: 620px;
+  margin: -10px auto 0;
+}
+
+.welcome-text h1 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.welcome-text p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Features */
+
+.features {
+  display: flex;
+  margin-top: 55px;
+  text-align: center;
+}
+
+.feature {
+  flex: 1;
+  padding: 0 18px;
+  border-right: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.feature:last-child {
+  border-right: none;
+}
+
+.feature-icon {
+  width: 52px;
+  height: 52px;
+  background: white;
+  color: #1677ed;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.feature h3 {
+  margin: 12px 0 7px;
+  font-size: 17px;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.right-section {
+  width: 48%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+
+.form-container {
+  width: 560px;
+  padding: 50px;
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #10182d;
+  margin: 0 0 10px;
+}
+
+.form-subtitle {
+  text-align: center;
+  color: #687083;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+/* Inputs */
+
+.input-group {
+  margin-bottom: 25px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #161b2c;
+}
+
+.input-wrapper {
+  height: 68px;
+  border: 1px solid #d1d6df;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 14px;
+  transition: 0.2s;
+}
+
+.input-wrapper:focus-within {
+  border-color: #1677ed;
+  box-shadow: 0 0 0 3px rgba(22, 119, 237, 0.1);
+}
+
+.input-wrapper span {
+  color: #8b94a5;
+}
+
+.input-wrapper input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #222;
+}
+
+.input-wrapper input::placeholder {
+  color: #9299a6;
+}
+
+/* Button */
+
+form button {
+  width: 100%;
+  height: 65px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 9px;
+  background: #116ff0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background: #075dcc;
+}
+
+/* Success */
+
+.success-message {
+  text-align: center;
+  margin-top: 22px;
+  color: #159447;
+  font-weight: bold;
+}
+
+/* Sign in */
+
+.signin {
+  text-align: center;
+  margin-top: 35px;
+  color: #555d6e;
+}
+
+.signin span {
+  color: #116ff0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+  .signup-page {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .left-section {
+    min-height: auto;
+  }
+
+  .right-section {
+    min-height: auto;
+    padding: 60px 20px;
+  }
+
+  .illustration {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .left-section {
+    padding: 30px 20px;
+  }
+
+  .illustration {
+    transform: scale(0.8);
+    margin-left: -10%;
+    margin-right: -10%;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .feature {
+    border-right: none;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-container h1 {
+    font-size: 38px;
+  }
+}
